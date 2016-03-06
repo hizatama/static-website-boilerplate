@@ -1,0 +1,9 @@
+__MACOSX
+
+# common
+.svn
+.DS_Store
+!.htaccess
+
+# for gulp
+node_modules

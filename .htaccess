@@ -1,6 +1,0 @@
-<Files ~ "^\.(htaccess|htpasswd|gitignore)$">
-deny from all
-</Files>
-
-Options -Indexes
-order deny,allow

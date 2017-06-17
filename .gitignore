@@ -1,9 +1,14 @@
 __MACOSX
 
 # common
+*~
+*.bak
+.idea
 .svn
+Thumbs.db
+desktop.ini
 .DS_Store
-!.htaccess
 
 # for gulp
 node_modules
+npm-debug.log

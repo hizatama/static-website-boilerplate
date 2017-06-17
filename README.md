@@ -1,7 +1,7 @@
 # static-website-boilerplate
 
 ## Require
-- [Node.js][https://nodejs.org/]
+- [Node.js](https://nodejs.org/)
 
 Node.jsがインストールされている必要があります。
 

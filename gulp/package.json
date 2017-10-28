@@ -23,6 +23,8 @@
     "gulp-sass": "^2.3.2",
     "gulp-sass-bulk-import": "^0.3.3",
     "gulp-sourcemaps": "^1.12.0",
-    "gulp-uglify": "^1.5.4"
+    "gulp-uglify": "^1.5.4",
+    "node-sass-package-importer": "^5.0.0-alpha.15",
+    "sanitize.css": "^5.0.0"
   }
 }

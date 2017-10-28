@@ -22,6 +22,7 @@ let gulp         = require('gulp'),
     uglify       = require('gulp-uglify'),
     sourceMaps   = require('gulp-sourcemaps'),
     bulkSass     = require('gulp-sass-bulk-import'),
+    sassImporter = require('node-sass-package-importer'),
     cleanCss     = require('gulp-clean-css');
 
 /* ======= Tasks ======= */
@@ -31,7 +32,11 @@ gulp.task('build:scss', ()=>{
   return gulp.src([SRC_SASS+'app.scss'])
       .pipe(plumber())
       .pipe(bulkSass())
-      .pipe(sass())
+      .pipe(sass({
+        importer: sassImporter({
+          extensions: ['.scss', '.css']
+        })
+      }))
       .pipe(autoprefixer())
       .pipe(cleanCss())
       .pipe(rename({

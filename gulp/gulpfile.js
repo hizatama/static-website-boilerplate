@@ -4,7 +4,7 @@ const
     DIST_CSS = '../dist/css/',
     DIST_JS  = '../dist/js/',
     SRC_DIR  = '../src/',
-    SRC_SASS = '../src/scss/',
+    SRC_SASS = '../src/sass/',
     SRC_JS   = '../src/js/';
 
 const
@@ -27,8 +27,8 @@ let gulp         = require('gulp'),
 
 /* ======= Tasks ======= */
 /* -- Build tasks -- */
-gulp.task('build', ['build:scss', 'build:js']);
-gulp.task('build:scss', ()=>{
+gulp.task('build', ['build:sass', 'build:js']);
+gulp.task('build:sass', ()=>{
   return gulp.src([SRC_SASS+'app.scss'])
       .pipe(plumber())
       .pipe(bulkSass())
@@ -73,11 +73,11 @@ gulp.task('reload', ()=>{
 
 /* -- Watch tasks -- */
 gulp.task('watch', ()=>{
-  gulp.watch(SRC_SASS+'**/*.scss', ['build:scss', 'reload']);
+  gulp.watch(SRC_SASS+'**/*.scss', ['build:sass', 'reload']);
   gulp.watch(DIST_DIR+'**/*.html', ['reload']);
   gulp.watch(SRC_JS+'**/*.js', ['build:js', 'reload']);
 });
 
 /* -- Other tasks -- */
-gulp.task('default', ['build:scss', 'build:js', 'connect', 'watch']);
+gulp.task('default', ['build:sass', 'build:js', 'connect', 'watch']);
 

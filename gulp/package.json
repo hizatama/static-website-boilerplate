@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "build:scss": "gulp build:scss",
+    "build:sass": "gulp build:sass",
     "build:js": "gulp build:js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

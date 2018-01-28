@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<title>TOP</title>
+	<title><!-- @@var title --></title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta property="og:type" content="website">
@@ -21,37 +20,15 @@
 
 	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/app.css">
-
-
-
+	<!-- @@placeholder css -->
 </head>
+<body class="<!-- @@var pageId -->">
+<!--#include file="common/header.html" -->
+<!-- @@placeholder main -->
+<!--#include file="common/footer.html" -->
 
-<body class="p-index">
-	<!--#include file="common/header.html" -->
-
-	<article class="l-main">
-		<h1 class="s-title01">テストサイト</h1>
-
-		<div class="m-modal">
-			<div class="m-modal-title">タイトル</div>
-			<div class="m-modal-body">
-
-			</div>
-			<div class="m-modal-buttons">
-				<a href="#" class="m-modal-close"></a>
-			</div>
-		</div>
-		<!-- /.m-modal -->
-	</article>
-	<!-- /.l-main -->
-
-	<!--#include file="common/footer.html" -->
-
-	<script src="js/libs.js"></script>
-	<script src="js/common.js"></script>
-
-	<script src="js/page/index.js"></script>
-
+<script src="js/libs.js"></script>
+<script src="js/common.js"></script>
+<!-- @@placeholder js -->
 </body>
-
 </html>

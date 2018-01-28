@@ -1,0 +1,18 @@
+@mixin clearfix() {
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+@mixin clear-list-style() {
+  list-style: none;
+}
+
+@mixin img($max-width, $width: 100%) {
+  max-width: $max-width;
+  @if $width {
+    width: $width
+  }
+}

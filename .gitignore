@@ -10,5 +10,7 @@ desktop.ini
 .DS_Store
 
 # for gulp
-node_modules
-npm-debug.log
+gulp/node_modules
+gulp/npm-debug.log
+gulp/package-lock.json
+
